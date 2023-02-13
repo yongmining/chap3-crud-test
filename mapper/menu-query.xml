@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="insertMenu">
+		INSERT /* com.greedy.section01.insert.Application#main() */
+		  INTO TBL_MENU A
+		 (
+		   A.MENU_CODE
+		 , A.MENU_NAME
+		 , A.MENU_PRICE
+		 , A.CATEGORY_CODE
+		 , A.ORDERABLE_STATUS
+		 )
+		 VALUES
+		 (
+		 	SEQ_MENU_CODE.NEXTVAL
+		 , ?
+		 , ?
+		 , ?
+		 , ?
+		 )
+	</entry>
+	<entry key="selectMenuList">
+		SELECT
+				A.MENU_CODE
+			  , A.MENU_NAME
+			  , A.MENU_PRICE
+			  , A.CATEGORY_CODE
+			  , A.ORDERABLE_STATUS
+		   FROM TBL_MENU A
+	</entry>
+</properties>
